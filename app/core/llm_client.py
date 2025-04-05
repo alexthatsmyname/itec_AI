@@ -8,13 +8,13 @@ Based on this, suggest a possible diagnosis or advice. Be short and medically co
     response = requests.post(
         "http://localhost:1234/v1/chat/completions",
         json={
-            "model": "llama-3.1-3B",  # sau modelul tău LLaMA 3B
+            "model": "llama-3.1-3B",
             "messages": [
                 {"role": "system", "content": "You are a helpful medical assistant."},
                 {"role": "user", "content": prompt}
             ],
-            "temperature": 0.3,  # reduce variabilitatea răspunsurilor
-            "max_tokens": 200  # răspunsuri mai scurte, dar rapide
+            "temperature": 0.3,
+            "max_tokens": 200
         }
     )
 
