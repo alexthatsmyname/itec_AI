@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/backendITEC.iml" filepath="$PROJECT_DIR$/.idea/backendITEC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/iTEC_AI.iml" filepath="$PROJECT_DIR$/.idea/iTEC_AI.iml" />
     </modules>
   </component>
 </project>
