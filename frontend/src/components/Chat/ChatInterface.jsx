@@ -29,13 +29,20 @@ const ChatInterface = () => {
         setIsLoading(true);
 
         try {
+            // Pregătim istoricul conversației pentru request
+            const conversationHistory = messages.map(msg => ({
+                text: msg.text,
+                sender: msg.sender
+            }));
+
             const response = await fetch('http://localhost:8000/nlp/assess', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    symptoms: inputMessage
+                    current_message: inputMessage,
+                    conversation_history: conversationHistory
                 })
             });
 
